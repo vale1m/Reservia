@@ -1,0 +1,21 @@
+body {
+    font-family: Raleway;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.navoptions {
+    padding: 10px;
+    
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: #0065FC;
+}
