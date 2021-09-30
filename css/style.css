@@ -9,13 +9,21 @@ nav {
 
 }
 
-.navoptions {
-    padding: 10px;
-    
+a {    
+    text-decoration: none;
 }
 
-a {
-    padding: 10px;
-    text-decoration: none;
+.navoptions {
     color: #0065FC;
+    padding: 50px;
+}
+
+.filterswithtitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters {
+    text-decoration: none;
+    color: black;
 }
