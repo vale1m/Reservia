@@ -23,6 +23,18 @@ a {
     flex-direction: row;
 }
 
+.filters1 {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding: 20px;
+}
+
+h4 {
+    display: inline;
+}
+
 .filters {
     text-decoration: none;
     color: black;
