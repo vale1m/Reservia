@@ -8,45 +8,55 @@
     <title>Reservia - Find a place for your dream vacation</title>
 </head>
 <body>
-    <nav>
-        <img src="" alt="">
-        <ul>
-            <a href="#" class="navoptions">Accommodations</a>
-            <a href="#" class="navoptions">Activities</a>
-            <a href="#" class="navoptions"><strong>Sign Up</strong></a>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <img src="img/Reservia@3x.png" alt="Reservia logo" id="reservialogo">
+            <ul class="navigationbar">
+                <li class="navoptions"><a href="#" class="navlinks">Accommodations</a></li>
+                <li class="navoptions"><a href="#" class="navlinks">Activities</a></li>
+                <li class="navoptions"><a href="#" class="navlinks"><strong>Sign Up</strong></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Find a place for your dream vacation</h1>
-    <p>Downtown or in nature</p>
+    <section>
+        <h1>Find a place for your dream vacation</h1>
+        <p>Downtown or in nature</p>
     
-    <form action="#" method="GET">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="search">
-        <button type="submit">Search</button>
-    </form>
+        <form action="#" method="GET">
+            <div class="mapiconcontainer">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input type="search" id="searchfield">
+            <button type="submit" id="searchbutton">Search</button>
+        </form>
+    </section>
     
-    <div class="filterswithtitle">
-        <h3>Filters</h3>
-        <ul>
-            <li class="filters1">
-                <i class="fas fa-money-bill-wave"></i>
-                <a href="#" class="filters"><h4>Low Cost</h4></a>
+    <section>
+        <ul class="filterswithtitle">
+            <h3>Filters</h3>
+            <li class="filtersbutton">
+                <span class="iconscontainer">
+                    <i class="fas fa-money-bill-wave"></i>  
+                </span>
+                <span class="linkscontainer">
+                    <a href="#" class="filters"><h4>Low Cost</h4></a>
+                </span>
             </li>
-            <li class="filters1">
+            <li class="filtersbutton">
                 <i class="fas fa-child"></i>
                 <a href="#" class="filters"><h4>Family-firendly</h4></a>
             </li>
-            <li class="filters1">
+            <li class="filtersbutton">
                 <i class="fas fas fa-heart"></i>
                 <a href="#" class="filters"><h4>Romantic</h4></a>
             </li>
-            <li class="filters1">
+            <li class="filtersbutton">
                 <i class="fas fas fas fa-dog"></i>
                 <a href="#" class="filters"><h4>Pets Allowed</h4></a>
             </li>
         </ul>
-    </div>
+    </section>
 
 
 

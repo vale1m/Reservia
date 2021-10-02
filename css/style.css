@@ -2,33 +2,134 @@ body {
     font-family: Raleway;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-}
-
 a {    
     text-decoration: none;
 }
 
+#reservialogo {
+    width: 100px;
+    height: auto;
+    float:left;
+    display: inline;
+}
+
+.navigationbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+}
+
 .navoptions {
+    list-style-type: none;
+}
+
+.navlinks {
     color: #0065FC;
-    padding: 50px;
+    padding: 20px;
+}
+
+.navlinks:visited {
+    color: #4f4f50;
+}
+
+.navlinks:hover {
+    text-decoration: underline;
+}
+
+.navlinks:active {
+    color: #002e74;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+form {
+    width: fit-content;
+    display: table-row;
+    
+}
+
+.mapiconcontainer {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    display: table-cell;
+}
+
+#searchfield {
+    border: 1px solid #F2F2F2;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1em;
+    width: 200px;
+    height: 50px;
+}
+
+#searchbutton {
+    border: none;
+    color:white;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1em;
+    width: 90px;
+    height: 50px;
 }
 
 .filterswithtitle {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    padding-left: 0px;
+    padding-top: 10px;
 }
 
-.filters1 {
+.filtersbutton {
     list-style-type: none;
     text-decoration: none;
-    color: black;
-    display: inline;
-    padding: 20px;
+    padding: 0px;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+
+}
+
+.iconscontainer {
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    display: table-cell;
+    color: #0065FC;
+    margin-left: 0px;
+    
+}
+
+.linkscontainer {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 1.2em;
+    display: table-cell;
+    padding: 0px;
 }
 
 h4 {
@@ -38,4 +139,6 @@ h4 {
 .filters {
     text-decoration: none;
     color: black;
+    text-align: right;
+    padding: 0px;
 }
