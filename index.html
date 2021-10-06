@@ -9,14 +9,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbarcontainer">
+        <div>
             <img src="img/Reservia@3x.png" alt="Reservia logo" id="reservialogo">
+        </div>
+        <nav class="navbarcontainer">
             <ul class="navigationbar">
-                <li class="navoptions"><a href="#" class="navlinks">Accommodations</a></li>
+                <li class="navoptions"><a href="#" class="navlinks" id="accommodations">Accommodations</a></li>
                 <li class="navoptions"><a href="#" class="navlinks">Activities</a></li>
-                <li class="navoptions"><a href="#" class="navlinks"><strong>Sign Up</strong></a></li>
             </ul>
         </nav>
+        <a href="#" class="navlinks" id="signup"><strong>Sign Up</strong></a>
     </header>
 
     <section>
@@ -27,7 +29,7 @@
             <div class="mapiconcontainer">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <input type="search" id="searchfield">
+            <input type="search" id="searchfield" placeholder="Marseille, France">
             <button type="submit" id="searchbutton">Search</button>
         </form>
     </section>

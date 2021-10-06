@@ -9,14 +9,15 @@ a {
 }
 
 .navbarcontainer {
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-right: 80px;
 }
 
 #reservialogo {
     width: 100px;
     height: auto;
-    float:left;
-    display: inline;
+    position: absolute;
+    padding-top: 50px;
 }
 
 .navigationbar {
@@ -36,16 +37,58 @@ a {
     padding: 20px;
 }
 
+#signup {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+}
+
 .navlinks:visited {
     color: #4f4f50;
 }
 
 .navlinks:hover {
-    text-decoration: underline;
+    border-top: 1px solid #0065FC;
+    padding-top: 70px;
 }
 
 .navlinks:active {
     color: #b2cdf5;
+}
+
+@media screen and (max-width: 980px) {
+    body{
+        padding: 0px;
+    }
+    
+    .navbarcontainer {
+        display: flex;
+        flex-direction: row;
+        padding-top: 130px;
+        padding-right: 0px  ;
+        
+    }
+    
+    .navigationbar {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+        margin: 0px;
+        padding-left: 0px;
+        padding-bottom: 15px;
+    }
+    
+    .navlinks {
+        color: #0065FC;
+        padding: 20px;
+    }
+
+    #accommodations {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 15px;
+    }
 }
 
 h1 {
@@ -54,26 +97,27 @@ h1 {
 
 form {
     width: fit-content;
-    display: table-row;
-    
+    display: flex;
+    flex-direction: row;
 }
 
 .mapiconcontainer {
     background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 50px;
-    text-align: center;
-    vertical-align: middle;
     font-size: 1.2em;
-    display: table-cell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #searchfield {
     border: 1px solid #F2F2F2;
     font-family: Raleway;
+    color: black;
     font-weight: bold;
     font-size: 1em;
     width: 200px;
@@ -81,7 +125,6 @@ form {
 }
 
 #searchbutton {
-    border: none;
     color:white;
     background-color: #0065FC;
     border: 1px solid #0065FC;
@@ -97,10 +140,13 @@ form {
 .filterswithtitle {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 1000px;
+    flex-wrap: wrap;
     padding-left: 0px;
     padding-top: 10px;
+}
+
+h3 {
+    margin-right: 30px;
 }
 
 .filtersbutton {
@@ -110,8 +156,11 @@ form {
     border: 2px solid #F2F2F2;
     border-left: none;
     border-radius: 40px;
-    width: 200px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+    margin-bottom: 14px;
 
 }
 
@@ -121,13 +170,12 @@ form {
     border-radius: 50px;
     width: 50px;
     height: 50px;
-    text-align: center;
-    vertical-align: middle;
     font-size: 1.2em;
-    display: table-cell;
     color: #0065FC;
     margin-left: 0px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .linkscontainer {
@@ -135,7 +183,8 @@ form {
     vertical-align: middle;
     font-size: 1.2em;
     display: table-cell;
-    padding: 0px;
+    margin-left: 12px;
+    margin-right: 16px;
 }
 
 h4 {
@@ -148,3 +197,5 @@ h4 {
     text-align: right;
     padding: 0px;
 }
+
+
