@@ -48,24 +48,40 @@ a {
 }
 
 .navlinks:hover {
-    border-top: 1px solid #0065FC;
-    padding-top: 70px;
+    text-decoration: underline;
 }
 
 .navlinks:active {
     color: #b2cdf5;
 }
 
-@media screen and (max-width: 980px) {
+#accommodations {
+    border-top: 1px solid #0065FC;
+    padding-top: 60px;
+}
+
+#activities {
+    color: #4f4f50
+}
+
+@media screen and (max-width: 700px) {
     body{
         padding: 0px;
     }
     
+    #reservialogo {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        padding-top: 20px;
+    }
+
     .navbarcontainer {
         display: flex;
         flex-direction: row;
-        padding-top: 130px;
-        padding-right: 0px  ;
+        padding-top: 88px;
+        padding-right: 0px;
+        border-bottom: 3px solid #F2F2F2;
         
     }
     
@@ -74,7 +90,7 @@ a {
         flex-flow: row;
         justify-content: space-around;
         width: 100%;
-        border-bottom: 3px solid #F2F2F2;
+       
         margin: 0px;
         padding-left: 0px;
         padding-bottom: 15px;
@@ -82,13 +98,24 @@ a {
     
     .navlinks {
         color: #0065FC;
-        padding: 20px;
+        padding: 20px 50px 15px 50px;
     }
 
     #accommodations {
         border-bottom: 3px solid #0065FC;
-        padding-bottom: 15px;
+        border-top: none;
+        padding-top: 0px;
     }
+
+    #activities {
+        color: #4f4f50;
+    }
+
+    #signup {
+        position: absolute;
+        top: 28px;
+        right: 0px;
+    
 }
 
 h1 {
