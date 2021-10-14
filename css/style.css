@@ -81,32 +81,53 @@ a {
         flex-direction: row;
         padding-top: 88px;
         padding-right: 0px;
-        border-bottom: 3px solid #F2F2F2;
     }
     
     .navigationbar {
         display: flex;
         flex-flow: row;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
         margin: 0px;
         padding-left: 0px;
         padding-bottom: 15px;
+        align-items: baseline;
+    }
+
+    .navoptions {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #linkaccommodations {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #linkactivities {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 3px solid #F2F2F2;
     }
     
     .navlinks {
         color: #0065FC;
-        padding: 20px 50px 15px 50px;
+        justify-content: center;
+        align-items: baseline;
     }
 
     #accommodations {
-        border-bottom: 3px solid #0065FC;
         border-top: none;
-        padding-top: 0px;
+        padding: 0px;
+        justify-content: center;
     }
 
     #activities {
         color: #4f4f50;
+        justify-content: center;
+        padding: 0px;
     }
 
     #signup {
