@@ -1,7 +1,12 @@
 body {
-    font-family: Raleway;
-    padding-left: 30px;
-    padding-right: 30px;
+    font-family: Raleway, sans-serif;
+    margin: 0px;
+    max-width: 1440px;
+}
+
+header {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 a {    
@@ -10,7 +15,9 @@ a {
 
 .navbarcontainer {
     padding-top: 50px;
-    padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 #reservialogo {
@@ -37,9 +44,7 @@ a {
 }
 
 #signup {
-    position: absolute;
-    top: 55px;
-    right: 25px;
+    padding-top: 15px;
 }
 
 .navlinks:visited {
@@ -61,11 +66,11 @@ a {
 
 #activities {
     color: #4f4f50;
-    padding-right: 70px;
+    padding-top: 60px;
 }
 
-@media screen and (max-width: 700px) {
-    body{
+@media screen and (max-width: 700px) {    
+    header {
         padding: 0px;
     }
     
@@ -74,6 +79,7 @@ a {
         height: auto;
         position: absolute;
         padding-top: 20px;
+        padding-left: 18px;
     }
 
     .navbarcontainer {
@@ -104,12 +110,14 @@ a {
         width: 100%;
         justify-content: center;
         border-bottom: 3px solid #0065FC;
+        padding-bottom: 14px;
     }
 
     #linkactivities {
         width: 100%;
         justify-content: center;
         border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 14px;
     }
     
     .navlinks {
@@ -133,8 +141,12 @@ a {
     #signup {
         position: absolute;
         top: 28px;
-        right: 0px;
+        right: 18px;
     }
+}
+
+.search {
+    padding-left: 50px;
 }
 
 h1 {
@@ -151,6 +163,7 @@ form {
     width: fit-content;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .mapiconcontainer {
@@ -164,15 +177,20 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #F2F2F2;
+}
+
+.fieldandbutton {
+    border: 1px solid #F2F2F2;
+    border-right: none;
 }
 
 #searchfield {
-    border: 1px solid #F2F2F2;
     font-family: Raleway;
+    border: none;
     color: black;
     font-weight: bold;
     font-size: 1em;
-    width: 200px;
     height: 50px;
 }
 
@@ -182,11 +200,21 @@ form {
     border: 1px solid #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: bold;
     font-size: 1em;
-    width: 90px;
     height: 50px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#searchicon {
+    display: none;
+}
+
+.filterssection {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .filterswithtitle {
@@ -230,10 +258,11 @@ h3 {
 }
 
 .linkscontainer {
-    text-align: right;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2em;
-    display: table-cell;
     margin-left: 12px;
     margin-right: 16px;
 }
@@ -250,14 +279,62 @@ h4 {
 }
 
 @media screen and (max-width: 700px) {
+    .search {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .mapiconcontainer {
+        height: 45px;
+        border: 1px solid #F2F2F2;
+    }
+
+    .fieldandbutton {
+        height: 45px;
+        border: 1px solid #F2F2F2;
+        border-right: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #searchfield {
+        height: 45px;
+        border: none;
+    }
+
+    #searchbutton {
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 10px;
+        height: 45px;
+    }
+
+    #searchicon {
+        display: inline;
+    }
+
+    .buttontext {
+        display: none;
+    }
 
     .filterssection {
-        padding-right: 50px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .filterswithtitle {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
         padding-right: 30px;
     }
+
+    #filterstitle {
+        width: 100%;
+    }
+    
 }

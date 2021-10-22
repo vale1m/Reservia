@@ -6,6 +6,9 @@
     <script src="https://kit.fontawesome.com/3e6ac46148.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Reservia - Find a place for your dream vacation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,20 +20,26 @@
                 <li class="navoptions" id="linkaccommodations"><a href="#" class="navlinks" id="accommodations">Accommodations</a></li>
                 <li class="navoptions" id="linkactivities"><a href="#" class="navlinks" id="activities">Activities</a></li>
             </ul>
+            <a href="#" class="navlinks" id="signup"><strong>Sign Up</strong></a></li>
         </nav>
-        <a href="#" class="navlinks" id="signup"><strong>Sign Up</strong></a>
+        
     </header>
 
-    <section>
+    <section class="search">
         <h1>Find a place for your dream vacation</h1>
         <p class="subtitle">Downtown or in nature</p>
     
         <form action="#" method="GET">
-            <div class="mapiconcontainer">
+            <span class="mapiconcontainer">
                 <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <input type="search" id="searchfield" placeholder="Marseille, France">
-            <button type="submit" id="searchbutton">Search</button>
+            </span>
+            <span class="fieldandbutton">
+                <input type="search" id="searchfield" placeholder="Marseille, France">
+                <button type="submit" id="searchbutton">
+                    <i class="fas fa-search" id="searchicon"></i>
+                    <span class="buttontext">Search</span>
+                </button>
+            </span>
         </form>
     </section>
     
