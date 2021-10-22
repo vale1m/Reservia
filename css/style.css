@@ -141,7 +141,8 @@ a {
     #signup {
         position: absolute;
         top: 28px;
-        right: 18px;
+        right: 25px;
+        padding-right: 0px;
     }
 }
 
@@ -186,12 +187,13 @@ form {
 }
 
 #searchfield {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     border: none;
     color: black;
     font-weight: bold;
     font-size: 1em;
     height: 50px;
+    text-indent: 15px;
 }
 
 #searchbutton {
@@ -284,6 +286,11 @@ h4 {
         padding-left: 18px;
     }
 
+    h1 {
+        margin-top: 0px;
+        padding-top: 15px;
+    }
+
     form {
         width: 100%;
     }
@@ -291,6 +298,7 @@ h4 {
     .mapiconcontainer {
         height: 45px;
         border: 1px solid #F2F2F2;
+        padding: 0px 15px;
     }
 
     .fieldandbutton {
