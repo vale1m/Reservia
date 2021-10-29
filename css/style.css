@@ -1,6 +1,6 @@
 body {
     font-family: Raleway, sans-serif;
-    margin: 0px;
+    margin: auto;
     max-width: 1440px;
 }
 
@@ -61,7 +61,7 @@ a {
 
 #accommodations {
     border-top: 2px solid #0065FC;
-    padding-top: 60px;
+    padding-top: 64px;
 }
 
 #activities {
@@ -394,16 +394,72 @@ form {
     margin-right: 40px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding: 50px 40px;
+    width: 60%;
+    box-sizing: border-box;
 }
 
 .accommodations-title {
-    padding-left: 40px;
+    margin: 0px;
+}
+
+.container-hotelcards {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0px;
 }
 
 .hotelcard {
-    margin-left: 40px;
-    text-indent: 15px;
+    width: 30%;
+    height: 32%;
     background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
+.photoshotels {
+    width: 100%;
+    height: 112px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cardtitles {
+    margin: 0px;
+    padding: 10px 0px 7px 10px;
+}
+
+.nightprice {
+    font-size: 0.9em;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+.star-container {
+    font-size: 0.7em;
+    padding: 7px 10px 5px 10px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+#greystar {
+    color: #F2F2F2;
+}
+
+.showmorelink {
+    font-size: 1em;
+    margin: 0px;
+}
 
