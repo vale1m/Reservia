@@ -701,3 +701,180 @@ form {
     }
 
 }
+
+.activities-section {
+    padding: 60px 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.activities-title {
+    margin: 0px;
+}
+
+.container-activitiescards {
+    padding: 25px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 0px;
+}
+
+.single-container-activitiescards {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 100%;
+}
+
+.double-container-activitiescards {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    gap: 40px;
+}
+
+.activitycard {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #E3E3E3;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#old-port {
+    height: 100%;
+}
+
+#pomegues-fort {
+    height: 60%;
+}
+
+#frioul-island {
+    height: 40%;
+}
+
+#calanques-national-park {
+    height: 100%;
+}
+
+#notre-dame-de-la-garde {
+    height: 50%;
+}
+
+#longchamp-park {
+    height: 50%;
+}
+
+.activitiescard-link {
+    text-decoration: none;
+}
+
+.activitiescard-link:visited {
+    color: #4f4f50;
+}
+
+.activitiescard-link:hover {
+    color: #0065FC;
+}
+
+.activitiescard-link:active {
+    color: #b2cdf5;
+}
+
+.photos-activities {
+    width: 100%;
+    height: 112px;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#old-port-photo {
+    height: 390px;
+}
+
+#pomegues-fort-photo {
+    height: 180px;
+}
+
+#calanques-national-park-photo {
+    height: 390px;
+}
+
+#notre-dame-de-la-garde-photo {
+    height: 140px;
+}
+
+#longchamp-park-photo {
+    height: 150px;
+}
+
+.cardtitles-activities {
+    margin: 0px;
+    padding: 20px 7px 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .activities-section {
+        padding: 10px 20px 40px 20px;
+    }
+
+    .activities-title {
+        font-size: 1.2em;
+    }
+    
+    .container-activitiescards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .single-container-activitiescards {
+        width: 100%;
+        
+    }
+    
+    .double-container-activitiescards {
+        width: 100%;
+        gap: 20px;
+    }
+
+    #old-port-photo {
+        height: 120px;
+        object-position: 50% 30%;
+    }
+    
+    #pomegues-fort-photo {
+        height: 120px;
+    }
+
+    #frioul-island-photo {
+        height: 120px;
+        object-position: 50% 10%;
+    }
+    
+    #calanques-national-park-photo {
+        height: 120px;
+    }
+    
+    #notre-dame-de-la-garde-photo {
+        height: 120px;
+        object-position: 50% 30%;
+    }
+    
+    #longchamp-park-photo {
+        height: 120px;
+    }
+    
+    .cardtitles-activities {
+        font-size: 0.9em;
+        padding: 15px 7px 15px 15px;
+    }
+}
