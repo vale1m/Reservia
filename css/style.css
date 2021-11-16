@@ -490,6 +490,10 @@ form {
     overflow: hidden;
 }
 
+.photoshotels:hover {
+    filter: brightness(120%);
+}
+
 .cardtitles {
     margin: 0px;
     padding: 10px 10px 7px 10px;
@@ -622,6 +626,10 @@ form {
     object-position: 50% 50%;
     object-fit: cover;
     overflow: hidden;
+}
+
+.photoshotels-mostpopular:hover {
+    filter: brightness(120%);
 }
 
 #divider-hotelinfo {
@@ -819,6 +827,10 @@ form {
     overflow: hidden;
 }
 
+.photos-activities:hover {
+    filter: brightness(120%);
+}
+
 #old-port-photo {
     height: 390px;
 }
@@ -833,6 +845,7 @@ form {
 
 #notre-dame-de-la-garde-photo {
     height: 140px;
+    object-position: 50% 30%;
 }
 
 #longchamp-park-photo {
@@ -899,5 +912,90 @@ form {
     .cardtitles-activities {
         font-size: 0.9em;
         padding: 15px 7px 15px 15px;
+    }
+}
+
+footer {
+    background-color: #F2F2F2;
+    padding: 50px 0px 35px 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.footer-list {
+    margin: 0px;
+    text-indent: 0px;
+    padding: 0px;
+}
+
+.footer-title-link {
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.ooter-title-link:visited {
+    color: #4f4f50;
+}
+
+.footer-title-link:hover {
+    color: #0065FC;
+}
+
+.ooter-title-link:active {
+    color: #b2cdf5;
+}
+
+.footer-title {
+    margin: 0px;
+    padding-bottom: 25px;
+}
+
+.footer-list-item {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.footerlinks {
+    color: black;
+}
+
+.footerlinks:visited {
+    color: #4f4f50;
+}
+
+.footerlinks:hover {
+    color: #0065FC;
+}
+
+.footerlinks:active {
+    color: #b2cdf5;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 40px 0px 25px 25px;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .footer-title {
+        padding-bottom: 20px;
+        font-size: 1em;
+    }
+
+    .footerlinks {
+        font-size: 0.9em;
     }
 }
