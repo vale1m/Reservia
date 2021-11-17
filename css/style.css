@@ -52,11 +52,11 @@ a {
 }
 
 .navlinks:hover {
-    text-decoration: underline;
+    color: black;
 }
 
 .navlinks:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 #accommodations {
@@ -218,6 +218,12 @@ form {
     padding-right: 18px;
 }
 
+#searchbutton:hover {
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    color: #0065FC;
+}
+
 #searchicon {
     display: none;
 }
@@ -294,7 +300,7 @@ form {
 }
 
 .filters:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 @media screen and (max-width: 768px) {
@@ -330,7 +336,7 @@ form {
     #searchfield {
         align-items: center;
         height: 44px;
-        width: 80%;
+        width: 95%;
     }
 
     #searchbutton {
@@ -338,6 +344,12 @@ form {
         padding-right: 14px;
         border-radius: 15px;
         height: 45px;
+    }
+
+    #searchbutton:hover {
+        background-color: #DEEBFF;
+        border: 1px solid #DEEBFF;
+        color: #0065FC;
     }
 
     #searchicon {
@@ -476,7 +488,7 @@ form {
 }
 
 .hotelcard-link:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 .photoshotels {
@@ -540,7 +552,7 @@ form {
 }
 
 .showmorelink:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 .showmorelinktitle {
@@ -610,7 +622,7 @@ form {
 }
 
 .hotelcard-mostpopular-link:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 #hotelimages-mostpopular {
@@ -648,27 +660,58 @@ form {
     flex-grow: 2;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1180px) {
     .accommodations-section {
-        padding: 50px 20px;
+        margin-right: 30px;
         width: 60%;
+        padding: 50px 10px 50px 30px;
+    }
+    
+    .container-hotelcards {
+        gap: 20px;
+    }
+
+    #hotelduport-title {
+        padding-bottom: 25px;
     }
 
     .mostpopular-section {
-        padding: 50px 20px 30px 20px;
-        width: 40%;
+        padding: 50px 30px 32px 30px;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .greysections {
+        flex-direction: column-reverse;
+    }
+    
+    .accommodations-section {
+        padding: 30px 18px;
+        width: 100%;
+        background-color: white;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .container-hotelcards {
-        gap: 10px;
+        gap: 30px;
+    }
+
+    #hotelduport-title {
+        padding-bottom: 7px;
+    }
+
+    .mostpopular-section {
+        margin-right: 0px;
+        border-radius: 0px;
+        padding: 35px 18px 30px 18px;
+        width: 100%;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    .greysections {
-        flex-direction: column-reverse;
-    }
     
     .accommodations-section {
         margin-left: 0px;
@@ -709,13 +752,6 @@ form {
     
     #eurosymbol-before {
         display: inline;
-    }
-
-    .mostpopular-section {
-        margin-right: 0px;
-        border-radius: 0px;
-        padding: 35px 18px 30px 18px;
-        width: 100%;
     }
 
     .mostpopular-title {
@@ -813,7 +849,7 @@ form {
 }
 
 .activitiescard-link:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 .photos-activities {
@@ -857,6 +893,63 @@ form {
     padding: 20px 7px 20px 20px;
 }
 
+@media screen and (max-width: 1120px) {
+
+    .container-activitiescards {
+        padding: 25px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 40px;
+        margin: 0px;
+    }
+    
+    .single-container-activitiescards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .double-container-activitiescards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 40px;
+    }
+    
+    #old-port-photo {
+        height: 120px;
+        object-position: 50% 60%;
+    }
+    
+    #pomegues-fort-photo {
+        height: 120px;
+    }
+
+    #frioul-island-photo {
+        height: 120px;
+        object-position: 50% 50%;
+    }
+    
+    #calanques-national-park-photo {
+        height: 120px;
+        object-position: 50% 50%;
+    }
+    
+    #notre-dame-de-la-garde-photo {
+        height: 120px;
+        object-position: 50% 20%;
+    }
+
+    #longchamp-park-photo {
+        height: 120px;
+        object-position: 50% 40%;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .activities-section {
         padding: 10px 20px 40px 20px;
@@ -874,45 +967,44 @@ form {
 
     .single-container-activitiescards {
         width: 100%;
-        
     }
     
     .double-container-activitiescards {
         width: 100%;
         gap: 20px;
-    }
-
-    #old-port-photo {
-        height: 120px;
-        object-position: 50% 30%;
-    }
-    
-    #pomegues-fort-photo {
-        height: 120px;
-    }
-
-    #frioul-island-photo {
-        height: 120px;
-        object-position: 50% 10%;
-    }
-    
-    #calanques-national-park-photo {
-        height: 120px;
-    }
-    
-    #notre-dame-de-la-garde-photo {
-        height: 120px;
-        object-position: 50% 30%;
-    }
-    
-    #longchamp-park-photo {
-        height: 120px;
+        display: flex;
+        flex-direction: column;
     }
     
     .cardtitles-activities {
         font-size: 0.9em;
         padding: 15px 7px 15px 15px;
     }
+
+    #old-port-photo {
+        object-position: 50% 50%;
+    }
+    
+    #pomegues-fort-photo {
+        object-position: 50% 50%;
+    }
+
+    #frioul-island-photo {
+        object-position: 50% 60%;
+    }
+    
+    #calanques-national-park-photo {
+        object-position: 50% 50%;
+    }
+    
+    #notre-dame-de-la-garde-photo {
+        object-position: 50% 20%;
+    }
+
+    #longchamp-park-photo {
+        object-position: 50% 40%;
+    }
+
 }
 
 footer {
@@ -925,12 +1017,14 @@ footer {
     flex-direction: row;
     width: 70%;
     justify-content: space-between;
+    gap: 35px;
 }
 
 .footer-list {
     margin: 0px;
     text-indent: 0px;
     padding: 0px;
+    width: 33%;
 }
 
 .footer-title-link {
@@ -948,7 +1042,7 @@ footer {
 }
 
 .ooter-title-link:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 .footer-title {
@@ -974,7 +1068,7 @@ footer {
 }
 
 .footerlinks:active {
-    color: #b2cdf5;
+    color: #DEEBFF;
 }
 
 @media screen and (max-width: 768px) {
