@@ -712,7 +712,6 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-    
     .accommodations-section {
         margin-left: 0px;
         margin-right: 0px;
@@ -1009,13 +1008,13 @@ form {
 
 footer {
     background-color: #F2F2F2;
-    padding: 50px 0px 35px 50px;
+    padding: 50px 35px 35px 50px;
 }
 
 .footer-container {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
     gap: 35px;
 }
@@ -1073,15 +1072,18 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
-        padding: 40px 0px 25px 25px;
+        padding: 40px 25px 25px 25px;
     }
     
     .footer-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
         justify-content: flex-start;
         gap: 25px;
+    }
+
+    .footer-list {
+        width: 100%;
     }
 
     .footer-title {
