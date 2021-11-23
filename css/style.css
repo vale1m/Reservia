@@ -69,17 +69,19 @@ a {
     padding-top: 60px;
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 1050px) {    
     header {
         padding: 0px;
     }
     
     #reservialogo {
-        width: 100px;
-        height: auto;
-        position: absolute;
-        padding-top: 20px;
         padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    #reservialogo {
+        padding-top: 20px;
     }
 
     .navbarcontainer {
@@ -231,9 +233,12 @@ form {
 .filterssection {
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.filterswithtitle {
+.filters-ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,7 +249,8 @@ form {
 }
 
 #filterstitle {
-    margin-right: 30px;
+    margin: 0px;
+    padding-right: 30px;
 }
 
 .filtersbutton {
@@ -289,6 +295,8 @@ form {
     color: black;
     text-align: right;
     padding: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .filters:visited {
@@ -303,11 +311,39 @@ form {
     color: #DEEBFF;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     .search {
         padding-right: 18px;
         padding-left: 18px;
     }
+
+    .filterssection {
+        padding-left: 18px;
+        padding-right: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filterstitle {
+        padding: 30px 0px 15px 0px;
+    }
+
+    .filters-ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    .filtersbutton {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
 
     .mainpagetitle {
         margin-top: 0px;
@@ -363,24 +399,12 @@ form {
     .filterssection {
         padding-left: 18px;
         padding-right: 18px;
-    }
-
-    .filterswithtitle {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 25px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     #filterstitle {
-        width: 100%;
         font-size: 1em;
-    }
-
-    .filtersbutton {
-        margin-bottom: 10px;
     }
 
     .linkscontainer {
@@ -416,12 +440,14 @@ form {
     margin: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     .information {
         padding-right: 18px;
         padding-left: 18px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .infoiconcircle {
         width: 0px;
         padding-left: 12px;
@@ -517,24 +543,45 @@ form {
     padding: 0px 10px;
 }
 
-#eurosymbol-before {
+.eurosymbol-before {
     display: none;
 }
 
-#eurosymbol-after {
+.eurosymbol-after {
     display: inline;
 }
 
 .star-container {
     font-size: 0.7em;
     padding: 7px 10px 5px 10px;
-}
-
-.fa-star {
     color: #0065FC;
 }
 
-#greystar {
+#greystar-auberge {
+    color: #F2F2F2;
+}
+
+#greystar-lesmouttes {
+    color: #F2F2F2;
+}
+
+#greystar-hoteldelamer1 {
+    color: #F2F2F2;
+}
+
+#greystar-hoteldelamer2 {
+    color: #F2F2F2;
+}
+
+#greystar-aubergelepanier {
+    color: #F2F2F2;
+}
+
+#greystar-aucoer {
+    color: #F2F2F2;
+}
+
+#greystar-toutblue {
     color: #F2F2F2;
 }
 
@@ -608,25 +655,32 @@ form {
     flex-direction: row;
 }
 
-.hotelcard-mostpopular-link {
+.hotelcard-mostpopular-link-photo {
     text-decoration: none;
     color: black;
+    width: 40%;
 }
 
-.hotelcard-mostpopular-link:visited {
+.hotelcard-mostpopular-link-text {
+    text-decoration: none;
+    color: black;
+    width: 60%;
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotelcard-mostpopular-link-text:visited {
     color: #4f4f50;
 }
 
-.hotelcard-mostpopular-link:hover {
+.hotelcard-mostpopular-link-text:hover {
     color: #0065FC;
 }
 
-.hotelcard-mostpopular-link:active {
+.hotelcard-mostpopular-link-text:active {
     color: #DEEBFF;
-}
-
-#hotelimages-mostpopular {
-    width: 40%;
 }
 
 .photoshotels-mostpopular {
@@ -644,19 +698,14 @@ form {
     filter: brightness(120%);
 }
 
-#divider-hotelinfo {
-    width: 60%;
-    padding-left: 5px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
 #morningsun {
     padding-bottom: 20px;
 }
 
-#mostpopularprices {
+.nightprice-mostpopular {
+    font-size: 0.9em;
+    margin: 0px;
+    padding: 0px 10px;
     flex-grow: 2;
 }
 
@@ -745,11 +794,11 @@ form {
         font-size: 0.8em;
     }
 
-    #eurosymbol-after {
+    .eurosymbol-after {
         display: none;
     }
     
-    #eurosymbol-before {
+    .eurosymbol-before {
         display: inline;
     }
 
@@ -1019,11 +1068,16 @@ footer {
     gap: 35px;
 }
 
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
 .footer-list {
     margin: 0px;
     text-indent: 0px;
     padding: 0px;
-    width: 33%;
 }
 
 .footer-title-link {
@@ -1032,7 +1086,7 @@ footer {
     color: black;
 }
 
-.ooter-title-link:visited {
+.footer-title-link:visited {
     color: #4f4f50;
 }
 
@@ -1040,7 +1094,7 @@ footer {
     color: #0065FC;
 }
 
-.ooter-title-link:active {
+.footer-title-link:active {
     color: #DEEBFF;
 }
 
@@ -1082,7 +1136,7 @@ footer {
         gap: 25px;
     }
 
-    .footer-list {
+    .footer-menu {
         width: 100%;
     }
 
