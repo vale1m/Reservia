@@ -493,7 +493,7 @@ form {
     width: 30%;
     height: 32%;
     background-color: white;
-    border: 5px solid white;
+    border: 5px solid #fffffe;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #E3E3E3;
     margin: 0px;
@@ -646,7 +646,7 @@ form {
     width: 100%;
     height: 145px;
     background-color: white;
-    border: 5px solid white;
+    border: 5px solid #fffffe;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #E3E3E3;
     margin: 0px;
@@ -709,6 +709,20 @@ form {
     flex-grow: 2;
 }
 
+@media screen and (max-width: 1350px) {
+    #hotelduport-title {
+        padding-bottom: 25px;
+    }
+
+    #lesmouttes-title {
+        padding-bottom: 25px;
+    }
+
+    #morningsun {
+        padding-bottom: 7px;
+    }
+}
+
 @media screen and (max-width: 1180px) {
     .accommodations-section {
         margin-right: 30px;
@@ -718,10 +732,6 @@ form {
     
     .container-hotelcards {
         gap: 20px;
-    }
-
-    #hotelduport-title {
-        padding-bottom: 25px;
     }
 
     .mostpopular-section {
@@ -847,7 +857,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 23%;
-    gap: 40px;
+    gap: 35px;
 }
 
 .activitycard {
