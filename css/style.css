@@ -754,7 +754,7 @@ form {
     }
 
     .container-hotelcards {
-        gap: 30px;
+        gap: 35px;
     }
 
     #hotelduport-title {
@@ -956,7 +956,6 @@ form {
 }
 
 @media screen and (max-width: 1120px) {
-
     .container-activitiescards {
         padding: 25px 0px 0px 0px;
         display: flex;
@@ -1012,11 +1011,14 @@ form {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     .activities-section {
         padding: 10px 20px 40px 20px;
     }
 
+}
+
+@media screen and (max-width: 768px) {
     .activities-title {
         font-size: 1.2em;
     }
